@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #3867cf;
+}
+
+header h1 {
+    font-style: italic;
+}
+
+header > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.alignment {
+    padding: 16px 0;
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+}
+
+.container ul li {
+    display: inline;
+}
+
+.container ul li a {
+    text-decoration: none;
+    padding-right: 8px;
+    font-weight: bold;
+}
+
+.container ul li a,
+header {
+    color: #fff;
+}
+
+body {
+    background-color: #ededed;
+}
+
+.sobre {
+    margin-top: 16px;
+    display: flex;
+}
+
+.conteudo {
+    margin-left: 40px;
+}
+
+.sobre h2,
+.produtos h2 {
+    font-weight: 700;
+    color:#3867cf;
+}
+
+.sobre img {
+    height: 280px;
+    max-width: 350px;
+    width: 100%;
+}
+
+hr {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    height: 4px;
+    background-color: #3867cf;
+}
+
+.anuncios {
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    column-gap: 2%;
+}
+
+.anuncios img {
+    max-width: 100%;
+    margin-bottom: 32px;
+    max-height: 230px;
+    height: 100%;
+}
+
+.anuncios h1 {
+    font-weight: 700;
+}
+
+.anuncios h3 {
+    padding-top: 8px;
+    padding-bottom: 12px;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.anuncios button {
+    width: 100%;
+    font-weight: 700;
+    font-size: medium;
+    color: #fff;
+    padding: 12px;
+    border-radius: 2px;
+    border: none;
+    background-color: #3867cf;
+    margin-bottom: 65px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+
+    .alignment {
+        padding: 16px auto;
+        margin: 0 auto;
+        max-width: 767px;
+        width: 82%;
+    }
+
+    header > .container {
+        display: block;
+        padding-left: 70px;
+    }
+
+    header h1 {
+        padding-bottom: 8px;
+    }
+
+    .sobre {
+        display: block;
+    }
+
+    .sobre img {
+        height: 100%;
+        max-width: 350px;
+        width: 100%;
+        margin-bottom: 20px;  
+    }
+
+    .conteudo {
+        margin-left: 0;
+    }
+
+    .anuncios {
+        display: block;
+    }
+
+    .anuncios img {
+        max-width: 100%;
+        margin-bottom: 32px;
+        max-height: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    .alignment {
+        padding: 16px 0;
+        margin: 0 auto;
+        max-width: 1023px;
+        width: 85%;
+    }
+
+    .sobre {
+        margin-top: 16px;
+    }
+
+    .conteudo p {
+        font-size: 1.2em;
+    }
+
+    .anuncios img {
+        max-width: 100%;
+        margin-bottom: 32px;
+        max-height: 200px;
+    }
+}
+
